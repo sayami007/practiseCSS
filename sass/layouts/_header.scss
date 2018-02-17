@@ -1,0 +1,55 @@
+
+.header {
+  background: url("../../assets/background.png") no-repeat top;
+  height: 100vh;
+  position: relative;
+
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+
+    &--logo {
+      display: flex;
+      font-size: 4.5rem;
+      margin-left: 1rem;
+    }
+
+    &--bar {
+      .nav-bar {
+        margin-top: 4rem;
+        display: flex;
+        list-style: none;
+
+        .nav-item {
+          font-family: "Lato";
+          margin-right: 3rem;
+          font-size: 1.6rem;
+          cursor: pointer;
+          text-transform: capitalize;
+          color: $color-light-black;
+          text-decoration: none;
+
+          &:visited {
+            color: $color-light-black;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+
+  &__title {
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    font-family: Lato;
+    &--main {
+      @include upperCenter(4rem,1.5rem);
+      font-weight: 700;
+    }
+    &--sub {
+      @include upperCenter(2rem,1.4rem);
+    }
+  }
+}

@@ -1,0 +1,6 @@
+@mixin upperCenter($fs,$ls){
+  text-transform: uppercase;
+  text-align: center;
+  font-size: $fs;
+  letter-spacing: $ls;
+}

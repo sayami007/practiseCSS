@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css?family=Pacifico");
+@import url("https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+.header__nav--logo {
+  font-family: "Pacifico", SansSerif; }
+
+.header {
+  background: url("../../assets/background.png") no-repeat top;
+  height: 100vh;
+  position: relative; }
+  .header__nav {
+    display: flex;
+    justify-content: space-between; }
+    .header__nav--logo {
+      display: flex;
+      font-size: 4.5rem;
+      margin-left: 1rem; }
+    .header__nav--bar .nav-bar {
+      margin-top: 4rem;
+      display: flex;
+      list-style: none; }
+      .header__nav--bar .nav-bar .nav-item {
+        font-family: "Lato";
+        margin-right: 3rem;
+        font-size: 1.6rem;
+        cursor: pointer;
+        text-transform: capitalize;
+        color: #0f0f0f;
+        text-decoration: none; }
+        .header__nav--bar .nav-bar .nav-item:visited {
+          color: #0f0f0f;
+          text-decoration: none; }
+  .header__title {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Lato; }
+    .header__title--main {
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 4rem;
+      letter-spacing: 1.5rem;
+      font-weight: 700; }
+    .header__title--sub {
+      text-transform: uppercase;
+      text-align: center;
+      font-size: 2rem;
+      letter-spacing: 1.4rem; }
